@@ -208,6 +208,11 @@ li {
         margin: 150px 0;
     }
 
+    .card {
+        width: 100%;
+        height: 270px;
+    }
+
     .card:hover {
         border-radius: 5px;
         background: rgba(0, 0, 0, .8);
@@ -216,7 +221,19 @@ li {
 
     .h2-services {
         margin: 0;
-        grid-column: 1 / 3;
+        grid-column: 1 / 4;
+    }
+
+    .soporte {
+        grid-column: 1 / 2;
+    }
+
+    .cctv {
+        grid-column: 2 / 3;
+    }
+
+    .redes {
+        grid-column: 3 / 4;
     }
 
 }
