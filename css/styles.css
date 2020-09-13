@@ -208,6 +208,10 @@ li {
         margin: 150px 0;
     }
 
+    .services {
+        grid: repeat(2, 100%) / repeat(3, 1fr);
+    }
+
     .card {
         width: 100%;
         height: 270px;
