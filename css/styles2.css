@@ -1,0 +1,252 @@
+:root {
+    --main-color: #1b64b1;
+}
+:root, *, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    height: 300px;
+    background: url(../img/cropped-hero.jpg) 0 0 / cover content-box content-box local;
+}
+
+.container {
+    color: #fff;
+}
+
+.fondo-header {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;    
+    z-index: -1;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--main-color);
+}
+
+.nav-container {
+    height: 50px;
+}
+
+.img-logo {
+    display: none;
+}
+
+.icon-menu {
+    margin: 5px 8px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.menu {
+    position: absolute;
+    width: 50%;
+    left: -100%;
+    padding: 10px;
+    margin: -10px 0;
+    background-color: var(--main-color);
+    transition: .5s ease-in-out all;
+}
+
+.show-menu {
+    left: 0;
+}
+
+.menu-link {
+    display: block;
+    padding: 8px;
+    color: #fff;
+}
+
+.header-container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.img-container {
+    width: 100px;
+}
+
+.title, .p-header-container {
+    margin: 1px;
+}
+
+.p-header-container {
+    line-height: 1.4;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 80%;
+    margin: auto auto 70px;
+    height: 250px;
+    padding: 30px 5px 0;
+    text-align: center;
+}
+
+/* .card-icon {
+    font-size: 50px;
+} */
+
+.p-card {
+    line-height: 1.5;
+}
+
+.about-us {
+    /* width: 80%; */
+    margin: auto auto 80px;
+    padding: 10px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, .8); */
+}
+
+.h2-about-us {
+    margin: 10px 0 0;
+}
+
+.p-about-us {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.footer-container {
+    text-align: center;
+    background-color: #212121;
+}
+
+.h2-footer {
+    margin: 5px 0 0;
+}
+
+.icons-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    margin: auto;
+}
+
+.icon-footer {
+    font-size: 25px;
+    color: #fff;
+}
+
+@media(min-width: 768px) {
+
+    .container {
+        display: grid;
+    }
+
+    .menu {
+        margin: 50px 0;
+    }
+
+    .header-container {
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 100%;
+    }
+
+    .div-header-container {
+        margin-left: 30px;
+    }
+
+    .services {
+        justify-content: normal;
+    }
+
+    .h2-services {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media(min-width: 992px) {
+
+    .nav-container {
+        justify-items: end;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    .menu {
+        position: initial;
+        width: 310px;
+        margin: 0;
+        display: flex;
+        padding: 5px 0;
+    }
+
+    .menu-item:hover {
+        background-color: black;
+    }
+
+    .main {
+        margin: 150px 0;
+    }
+
+    .services {
+        grid: repeat(2, 100%) / repeat(3, 1fr);
+    }
+
+    .card {
+        width: 100%;
+        height: 270px;
+    }
+
+    .card:hover {
+        border-radius: 5px;
+        background: rgba(0, 0, 0, .8);
+        transition: .3s ease-in-out all;
+    }
+
+    .h2-services {
+        margin: 0;
+        grid-column: 1 / 4;
+    }
+
+    .soporte {
+        grid-column: 1 / 2;
+    }
+
+    .cctv {
+        grid-column: 2 / 3;
+    }
+
+    .redes {
+        grid-column: 3 / 4;
+    }
+
+}
