@@ -1,5 +1,6 @@
 :root {
     --main-color: #1b64b1;
+    --font-color: #000;
 }
 :root, *, ::after, ::before {
     box-sizing: border-box;
@@ -87,6 +88,7 @@ li {
 .header-container {
     width: 80%;
     margin: 50px auto;
+    padding-top: 50px;
 }
 
 .img-container {
@@ -101,34 +103,45 @@ li {
     line-height: 1.4;
 }
 
+/*** SERVICES ***/
+
+.section-services {
+    margin-top: 40px;
+}
+
 .services {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    color: var(--font-color);
+    overflow: hidden;
 }
 
 .card {
     width: 80%;
     margin: auto auto 70px;
-    height: 250px;
+    height: 300px;
     padding: 30px 5px 0;
     text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
-/* .card-icon {
+.card-icon {
     font-size: 50px;
-} */
+}
 
 .p-card {
     line-height: 1.5;
 }
 
+/*** NOSOTROS ***/
+
 .about-us {
-    /* width: 80%; */
     margin: auto auto 80px;
     padding: 10px;
     text-align: center;
-    /* background: rgba(0, 0, 0, .8); */
+    color: var(--font-color);
 }
 
 .h2-about-us {
@@ -140,9 +153,11 @@ li {
     line-height: 1.5;
 }
 
+/*** FOOTER **/
+
 .footer-container {
     text-align: center;
-    background-color: #212121;
+    background-color: var(--main-color);
 }
 
 .h2-footer {
@@ -193,6 +208,10 @@ li {
 
 @media(min-width: 992px) {
 
+    .header {
+        height: 400px;
+    }
+
     .nav-container {
         justify-items: end;
     }
@@ -217,19 +236,17 @@ li {
         margin: 150px 0;
     }
 
+    /*** SERVICES ***/
+
     .services {
         grid: repeat(2, 100%) / repeat(3, 1fr);
+        padding: 0 15px;
+        gap: 10px;
     }
 
     .card {
         width: 100%;
         height: 270px;
-    }
-
-    .card:hover {
-        border-radius: 5px;
-        background: rgba(0, 0, 0, .8);
-        transition: .3s ease-in-out all;
     }
 
     .h2-services {
