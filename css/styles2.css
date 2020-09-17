@@ -1,5 +1,7 @@
 :root {
     --main-color: #1b64b1;
+    /* --main-color: #3b5798; */
+    /* --main-color: #212121; */
     --font-color: #000;
 }
 :root, *, ::after, ::before {
@@ -93,6 +95,7 @@ li {
 
 .img-container {
     width: 100px;
+    border-radius: 50%;
 }
 
 .title, .p-header-container {
