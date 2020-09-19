@@ -27,7 +27,7 @@ li {
 
 .header {
     height: 75vh;
-    background: url(../img/cropped-hero.jpg) 0 0 / cover content-box content-box local;
+    background: url(../img/cropped-hero.jpg) 0 0 / cover content-box content-box fixed;
 }
 
 .container {
